@@ -1,0 +1,27 @@
+{
+    "name": "ouranoshong/wx-declare-custom-api",
+	"description": "weixin declare custom api sdk",
+	"keywords": ["weixin", "sdk", "declare custom"],
+    "authors": [
+        {
+            "name": "ouranoshong",
+            "email": "ouranoshong@outlook.com"
+        }
+    ],
+    "require": {
+		"php": ">=5.4",
+		"ext-curl": "*",
+		"ext-simplexml": "*",
+		"ext-libxml": "*",
+		"ext-json": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"Wx\\DeclareCustom\\": "src/"
+		},
+		"files": ["src/bootstrap.php"]
+	},
+	"require-dev": {
+		"phpunit/phpunit": "^7.1"
+	}
+}
