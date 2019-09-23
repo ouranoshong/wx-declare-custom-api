@@ -39,6 +39,11 @@ class Client
 		$body = post_xml($uri, convert_arr_to_xml($params));
 
 		if ($body) {
+
+			if (!mb_check_encoding($body, 'UTF-8')) {
+				$body = utf8_encode($body);
+			}
+
 			$response->setBody(convert_xml_to_arr($body));
 		}
 
