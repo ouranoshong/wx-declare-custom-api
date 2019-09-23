@@ -14,6 +14,11 @@ class Response implements ResponseInterface
 		$this->body = $data;
 	}
 
+	public function getBody()
+	{
+		return $this->body;
+	}
+
 	public function get($key)
 	{
 		return isset($this->body[$key]) ? $this->body[$key] : null;
