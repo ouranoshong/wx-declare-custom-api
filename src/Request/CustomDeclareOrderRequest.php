@@ -64,4 +64,29 @@ class CustomDeclareOrderRequest implements RequestInterface
 	{
 		$this->params['name'] = $name;
 	}
+
+	public function setSubOrderNo($subOrderNo)
+	{
+		$this->params['sub_order_no'] = $subOrderNo;
+	}
+
+	public function setFeeType($feeType)
+	{
+		$this->params['fee_type'] = $feeType;
+	}
+
+	public function setOrderFee($orderFee)
+	{
+		$this->params['order_fee'] = $orderFee;
+	}
+
+	public function setTransportFee($transportFee)
+	{
+		$this->params['transport_fee'] = $transportFee;
+	}
+
+	public function setProductFee($productFee)
+	{
+		$this->params['product_fee'] = $productFee;
+	}
 }
