@@ -27,7 +27,7 @@ function to_url_params(array $values)
 {
 	$buff = "";
 	foreach ($values as $k => $v) {
-		if ($k != "sign" && $v != "" && !is_array($v)) {
+		if ($k != "sign" && $v !== "" && $v !== null && !is_array($v)) {
 			$buff .= $k . "=" . $v . "&";
 		}
 	}
