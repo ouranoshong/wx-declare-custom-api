@@ -14,7 +14,7 @@
 		"ext-simplexml": "*",
 		"ext-libxml": "*",
 		"ext-json": "*",
-		"ext-mbstring": "*",
+		"ext-mbstring": "*"
 	},
 	"autoload": {
 		"psr-4": {
